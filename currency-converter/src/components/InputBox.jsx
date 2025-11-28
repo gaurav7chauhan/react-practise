@@ -11,7 +11,8 @@ const InputBox = ({
 }) => {
   return (
     <div
-      className={`bg-white/95 backdrop-blur-sm p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 ${className}`}
+      className={`bg-white/95 backdrop-blur-sm p-5 rounded-xl shadow-md hover:shadow-lg 
+        transition-shadow duration-300 ${className}`}
     >
       <div className="flex flex-col sm:flex-row gap-4">
         {/* Amount Section */}
@@ -41,7 +42,7 @@ const InputBox = ({
             Currency
           </label>
           <select
-            className="w-full rounded-lg px-4 py-2.5 bg-gradient-to-r from-gray-50 to-gray-100 
+            className="w-full rounded-lg px-4 py-2.5 bg-linear-to-r from-gray-50 to-gray-100 
             cursor-pointer outline-none border border-gray-200 hover:border-blue-400 
             focus:border-blue-500 focus:ring-2 focus:ring-blue-200 
             text-gray-800 font-semibold uppercase text-sm

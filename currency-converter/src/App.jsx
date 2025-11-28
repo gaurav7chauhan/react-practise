@@ -22,7 +22,10 @@ const App = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-wrap justify-center items-center bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 px-4 py-8">
+    <div
+      className="w-full min-h-screen flex flex-wrap justify-center items-center bg-linear-to-br 
+    from-blue-900 via-blue-800 to-indigo-900 px-4 py-8"
+    >
       <div className="w-full max-w-lg">
         {/* Header */}
         <div className="text-center mb-8">
@@ -46,7 +49,7 @@ const App = () => {
               <InputBox
                 label="From"
                 amount={amount}
-                onAmountChange={(amount) => setAmount(amount)}
+                onAmountChange={setAmount}
                 currencyOptions={options}
                 onCurrencyChange={(currency) => setFrom(currency)}
                 selectCurrency={from}
@@ -58,7 +61,7 @@ const App = () => {
               <button
                 type="button"
                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 
-                border-2 border-white/30 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 
+                border-2 border-white/30 rounded-full bg-linear-to-r from-blue-600 to-indigo-600 
                 text-white p-3 hover:scale-110 hover:shadow-lg transition-all duration-300 
                 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 
                 focus:ring-offset-transparent group"
@@ -87,7 +90,7 @@ const App = () => {
                 amount={convertedAmount}
                 onAmountChange={(amount) => setConvertedAmount(amount)}
                 selectCurrency={to}
-                onCurrencyChange={(currency) => setTo(currency)}
+                onCurrencyChange={setTo}
                 currencyOptions={options}
                 amountDisable
               />
@@ -96,7 +99,7 @@ const App = () => {
             {/* Convert Button */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 
+              className="w-full bg-linear-to-r from-blue-600 to-indigo-600 
               hover:from-blue-700 hover:to-indigo-700 text-white font-semibold 
               px-6 py-4 rounded-xl shadow-lg hover:shadow-xl 
               transition-all duration-300 transform hover:scale-[1.02] 
