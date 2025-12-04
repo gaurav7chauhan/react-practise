@@ -72,6 +72,19 @@ export const Header = () => {
                   Contact
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to={"/github"}
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 ${
+                      isActive ? "text-orange-500" : "text-gray-300"
+                    } duration-200 border-b border-gray-700 hover:bg-gray-700 
+                    lg:hover:bg-transparent lg:border-0 hover:text-orange-500 lg:p-0 transition-colors`
+                  }
+                >
+                  Github
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
