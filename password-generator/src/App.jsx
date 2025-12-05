@@ -7,7 +7,7 @@ const App = () => {
   const [password, setPassword] = useState("");
   const [copied, setCopied] = useState(false);
   const passwordRef = useRef(null);
-  const timoutRef = useState(null);
+  const timoutRef = useRef(null);
 
   const passwordGenerator = useCallback(() => {
     let pass = "";
