@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* yahan apna theme daalo (extend jaisa) */
+@theme {
+  --color-brand: #22c55e;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* darkMode: 'class' equivalent */
+@custom-variant dark (&:where(.dark, .dark *));
